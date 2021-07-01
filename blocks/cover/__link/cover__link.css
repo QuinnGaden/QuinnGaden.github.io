@@ -1,0 +1,50 @@
+.cover__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 740px;
+  background-image: url(../../../images/__background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  position: relative;
+}
+
+.cover__link::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; 
+  bottom: 0;
+  content: "";
+  background: rgba(0, 0, 0, .5);
+  opacity: 0.3;
+}
+
+.cover__link:hover::after {
+  background: rgba(0, 0, 0, .5);
+  opacity: 0.8;
+  
+}
+
+@media (max-width: 1279px) {
+  .cover__link {
+    min-height: 640px;
+  
+  }
+}
+
+@media (max-width: 1023px) {
+  .cover__link {
+    min-height: 480px;
+    
+  }
+}
+
+@media (max-width: 767px) {
+  .cover__link {
+    min-height: 200px;
+    
+  }
+}

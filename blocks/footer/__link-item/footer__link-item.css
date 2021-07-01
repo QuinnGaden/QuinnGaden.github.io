@@ -1,0 +1,18 @@
+.footer__link-item {
+  padding-right: 18px;
+}
+
+.footer__link-item:last-child {
+  padding-right: 0;
+}
+
+@media (max-width: 767px) {
+  .footer__link-item{
+    padding: 0 0 32px;
+    
+  }
+  .footer__link-item:last-child {
+    padding: 0 0 48px;
+  }
+}
+
